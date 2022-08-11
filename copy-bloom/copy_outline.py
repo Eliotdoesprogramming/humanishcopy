@@ -18,7 +18,6 @@ def create_outline(topic:str, n_points:int=3):
         if len(point_split[0].split(' ')) + len(text.split(' ')) + 2 < MAX_SEQUENCE_LENGTH:
             text += point_split[0]
             text += f"\n{i+2}: "
-            print(text,  end='\n====================\n')
     return points
 
 def query(payload):
